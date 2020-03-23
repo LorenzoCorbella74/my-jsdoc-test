@@ -1,0 +1,13 @@
+{
+    "overview": {
+        "title": "Titolo Overview",
+        "children": {
+            "childA": {
+                "title": "Child A"
+            },
+            "childB": {
+                "title": "Child B"
+            }
+        }
+    }
+}
