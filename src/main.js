@@ -2,17 +2,22 @@ import "./styles.scss";
 
 /**
  * @fileOverview
- * Questo è un esempio di descrizione del file main.js
+ * Questo è un esempio di descrizione che può essere 
+ * usato per aggiungere delle informazioni al singolo file
  * 
  * @author
  * Lorenzo
+ * 
+ * @copyright
+ * Lorenzo 2020
+ * 
+ * @license
+ * MIT
  * 
  * @example
  * var str = "abc";
  * console.log(repeat(testFn('ciao')); // ciao Lorenzo
  */
-
-
 
 /**
  * A person object with name, age and sayName method.
@@ -32,7 +37,10 @@ const personLiteral = {
     sayName () {
         alert(this.name)
     }
-}
+};
+
+/** @constant */
+const FORD = 'Ford';
 
 /**
  * Prova di descrizione di funzione
@@ -46,9 +54,14 @@ function testFn (str) {
     return str + personLiteral.name + '!';
 }
 
+/**
+     * @default 'Untitled'
+     */
+    this.title = title || 'Untitled';
+
 
 /** 
- * Class to create a person object. 
+ * Class to create a person object. See {@tutorial overview}
  * @class
  * @tutorial overview
  */
@@ -56,8 +69,9 @@ class Person {
     constructor(props) {
       /** 
        * @property {string} name The person's name.
+       * @default 'Unnamed'
        */
-      this.name = props.name
+      this.name = props.name || 'Unnamed';
       /** 
        * @property {number} age The person's name.
        */
