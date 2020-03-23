@@ -6,7 +6,7 @@ import "./styles.scss";
  * usato per aggiungere delle informazioni al singolo file
  * 
  * @author
- * Lorenzo
+ * Lorenzo C.
  * 
  * @copyright
  * Lorenzo 2020
@@ -47,52 +47,53 @@ const FORD = 'Ford';
  *
  * @deprecated
  * @param {String} str
- * @see Person#sayName
+ * @see Person#sayNo
  * @returns {String} stringa
  */
-function testFn (str) {
+export function testFn (str) {
     return str + personLiteral.name + '!';
 }
 
-/**
-     * @default 'Untitled'
-     */
-    this.title = title || 'Untitled';
-
-
 /** 
  * Class to create a person object. See {@tutorial overview}
+ * {@link https://jsdoc.app/tags-inline-link.html LinkTAG}
+ * @see The <a href="https://jsdoc.app/tags-inline-link.html">Link TAG</a>.
  * @class
+ * @since 10.2.0
  * @tutorial overview
  */
-class Person {
+export class Person {
+
     constructor(props) {
-      /** 
-       * @property {string} name The person's name.
-       * @default 'Unnamed'
-       */
-      this.name = props.name || 'Unnamed';
-      /** 
-       * @property {number} age The person's name.
-       */
-      this.age = props.age
-      /** 
-       * @property {Function} sayName A method to annouce the person's name.
-       * {@link https://jsdoc.app/tags-inline-link.html LinkTAG}
-       * @since 10.2.0
-       * @see The <a href="https://jsdoc.app/tags-inline-link.html">Link TAG</a>.
-       * @returns void
-       */
-      this.sayName = () => alert(this.name)
+        /** 
+         * @property {string} name The person's name.
+         * @default 'Unnamed'
+         */
+        this.name = props.name || 'Unnamed';
+        /** 
+         * @property {number} age The person's name.
+         */
+        this.age = props.age;
     }
-  }
-  
-  const guy = new Person({
+
+
+    /**
+     * descrizione di metodo
+     * @returns void
+     * @method
+     * @fires Person.sayYes
+	 * @Throws Err
+     */
+    sayYes () {
+        alert(this.name)
+    }
+}
+
+const guy = new Person({
     name: 'Lorenzo',
     age: 32
-  })
-  guy.sayName()
-
+});
+guy.sayName();
 
 
 console.log(testFn('ciao'));
