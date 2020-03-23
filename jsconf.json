@@ -1,0 +1,22 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "includePattern": ".+\\.js(doc|x)?$",
+        "include": [
+            "./src"
+        ],
+        "exclude": [
+            "node_modules","dist"
+        ]
+    },
+    "recurseDepth": 10,
+    "opts": {
+        "destination": "./docs/",
+        "encoding": "utf8",
+        "private": true,
+        "recurse": true,
+        "template": "./node_modules/minami"
+    }
+}
